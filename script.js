@@ -15,25 +15,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const songs = [
         {
-            name: 'song1',
-            title: 'Electric Dreams',
-            artist: 'Synthwave Duo',
-            src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
-            cover: 'https://via.placeholder.com/150/FF5733/FFFFFF?text=Dream'
+            name: 'kesariya',
+            title: 'Kesariya',
+            artist: 'Pritam, Arijit Singh',
+            src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3',
+            cover: 'https://via.placeholder.com/150/F8D161/FFFFFF?text=Kesariya'
         },
         {
-            name: 'song2',
-            title: 'Morning Bloom',
-            artist: 'Acoustic Soul',
-            src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
-            cover: 'https://via.placeholder.com/150/33FF57/FFFFFF?text=Bloom'
+            name: 'raatan_lambiyan',
+            title: 'Raatan Lambiyan',
+            artist: 'Tanishk Bagchi, Jubin Nautiyal, Asees Kaur',
+            src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3',
+            cover: 'https://via.placeholder.com/150/4A4E69/FFFFFF?text=Raatan'
         },
         {
-            name: 'song3',
-            title: 'City Lights',
-            artist: 'Urban Beats',
-            src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3',
-            cover: 'https://via.placeholder.com/150/3357FF/FFFFFF?text=City'
+            name: 'peelings',
+            title: 'Peelings',
+            artist: 'Artist Name for Peelings',
+            src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3',
+            cover: 'https://via.placeholder.com/150/DDA0DD/FFFFFF?text=Peelings'
         }
     ];
 
