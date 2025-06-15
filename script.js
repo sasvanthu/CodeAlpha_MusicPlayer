@@ -24,15 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'raatan_lambiyan',
             title: 'Raatan Lambiyan',
             artist: 'Tanishk Bagchi, Jubin Nautiyal, Asees Kaur',
-            src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3',
-            cover: 'https://via.placeholder.com/150/4A4E69/FFFFFF?text=Raatan'
+            src: 'Raataan Lambiyan Shershaah 128 Kbps.mp3',
         },
         {
             name: 'peelings',
             title: 'Peelings',
             artist: 'Artist Name for Peelings',
-            src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3',
-            cover: 'https://via.placeholder.com/150/DDA0DD/FFFFFF?text=Peelings'
+            src: 'Peelings (PenduJatt.Com.Se).mp3',
         }
     ];
 
