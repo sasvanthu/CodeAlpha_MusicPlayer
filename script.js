@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'kesariya',
             title: 'Kesariya',
             artist: 'Pritam, Arijit Singh',
-            src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3',
+            src: 'https://github.com/sasvanthu/CodeAlpha_MusicPlayer/blob/caadc1a81a7cfa9c04d26b0c6ef2d3e93db4bb2c/Kesariya%20(PenduJatt.Com.Se).mp3',
             cover: 'https://via.placeholder.com/150/F8D161/FFFFFF?text=Kesariya'
         },
         {
