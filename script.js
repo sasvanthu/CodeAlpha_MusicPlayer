@@ -31,7 +31,38 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Peelings',
             artist: 'Artist Name for Peelings',
             src: 'Peelings (PenduJatt.Com.Se).mp3',
-        }
+        },
+        {
+    name: 'ak_the_tiger',
+    title: 'AK - The Tiger',
+    artist: 'Unknown',
+    src: 'AK - The Tiger.mp3',
+},
+{
+    name: 'kanimaa',
+    title: 'Kanimaa',
+    artist: 'Unknown',
+    src: 'Kanimaa.mp3',
+},
+{
+    name: 'kannadi_poove',
+    title: 'Kannadi Poove',
+    artist: 'Unknown',
+    src: 'Kannadi Poove.mp3',
+},
+
+{
+    name: 'rise_of_dragon',
+    title: 'Rise Of Dragon',
+    artist: 'Unknown',
+    src: 'Rise Of Dragon.mp3',
+},
+{
+    name: 'vazhithunaiye',
+    title: 'Vazhithunaiye',
+    artist: 'Unknown',
+    src: 'Vazhithunaiye.mp3',
+}
     ];
 
     let songIndex = 0;
