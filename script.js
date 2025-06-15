@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Kesariya',
             artist: 'Pritam, Arijit Singh',
             src: 'Kesariya (PenduJatt.Com.Se).mp3',
-            cover: 'https://via.placeholder.com/150/F8D161/FFFFFF?text=Kesariya'
         },
         {
             name: 'raatan_lambiyan',
