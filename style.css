@@ -4,29 +4,34 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #e0f2f7;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
 }
 
 .player-container {
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 40px rgba(255, 0, 255, 0.2);
     padding: 30px;
     width: 350px;
     text-align: center;
-    box-sizing: border-box;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.player-container:hover {
+    transform: scale(1.02);
 }
 
 .img-container {
-    position: relative;
     width: 200px;
     height: 200px;
     margin: 0 auto 20px;
     border-radius: 50%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    box-shadow: 0 0 15px #00ffe7, 0 0 25px #ff00c8;
 }
 
 .img-container img {
@@ -37,45 +42,47 @@ body {
 
 h2 {
     font-size: 1.8em;
+    color: #ffdd59;
+    text-shadow: 0 0 10px #ffdd59;
     margin-bottom: 5px;
-    color: #2c3e50;
 }
 
 h3 {
     font-size: 1.2em;
+    color: #ccc;
     margin-top: 0;
-    color: #7f8c8d;
 }
 
 .progress-container {
-    background: #e0e0e0;
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 5px;
     cursor: pointer;
     margin: 20px 0;
-    height: 8px;
+    height: 10px;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .progress {
-    background-color: #3498db;
+    background: linear-gradient(to right, #00e6f6, #ff00c8);
     border-radius: 5px;
     height: 100%;
     width: 0%;
     transition: width 0.1s linear;
+    box-shadow: 0 0 10px #00e6f6;
 }
 
 .time-container {
     display: flex;
     justify-content: space-between;
     font-size: 0.9em;
-    color: #555;
+    color: #aaa;
     margin-top: -10px;
 }
 
 .controls {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 30px 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,22 +91,23 @@ h3 {
 
 .controls i {
     font-size: 1.8em;
-    color: #555;
+    color: #ccc;
     cursor: pointer;
-    transition: color 0.2s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .controls i:hover {
-    color: #3498db;
+    color: #00e6f6;
+    transform: scale(1.2);
 }
 
 .controls .main-button {
     font-size: 2.5em;
-    color: #3498db;
+    color: #ff00c8;
 }
 
 .controls .main-button:hover {
-    color: #2980b9;
+    color: #00e6f6;
 }
 
 .volume-container {
@@ -112,7 +120,7 @@ h3 {
 
 .volume-container i {
     font-size: 1.2em;
-    color: #7f8c8d;
+    color: #ccc;
 }
 
 #volume-slider {
@@ -120,7 +128,7 @@ h3 {
     -webkit-appearance: none;
     appearance: none;
     height: 6px;
-    background: #ddd;
+    background: #444;
     border-radius: 5px;
     outline: none;
     cursor: pointer;
@@ -128,27 +136,26 @@ h3 {
 
 #volume-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    appearance: none;
     width: 16px;
     height: 16px;
-    background: #3498db;
+    background: #00ffe7;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 8px #00ffe7;
 }
 
 #volume-slider::-moz-range-thumb {
     width: 16px;
     height: 16px;
-    background: #3498db;
+    background: #00ffe7;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 8px #00ffe7;
 }
 
 .playlist-container {
     margin-top: 30px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;
     text-align: left;
 }
@@ -156,8 +163,9 @@ h3 {
 .playlist-container h4 {
     margin-top: 0;
     margin-bottom: 15px;
-    color: #2c3e50;
+    color: #fff;
     text-align: center;
+    text-shadow: 0 0 5px #00e6f6;
 }
 
 #playlist {
@@ -165,33 +173,31 @@ h3 {
     padding: 0;
     max-height: 150px;
     overflow-y: auto;
-    border: 1px solid #eee;
-    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 #playlist li {
     padding: 10px 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
     font-size: 0.95em;
-    color: #555;
+    color: #ddd;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#playlist li:last-child {
-    border-bottom: none;
-}
-
 #playlist li:hover {
-    background-color: #f8f8f8;
+    background-color: rgba(0, 230, 255, 0.1);
+    transform: scale(1.01);
 }
 
 #playlist li.active {
-    background-color: #eaf6fc;
-    color: #3498db;
+    background-color: rgba(0, 230, 255, 0.2);
+    color: #00e6f6;
     font-weight: bold;
 }
 
@@ -201,6 +207,6 @@ h3 {
 
 #playlist .song-duration-list {
     font-size: 0.85em;
-    color: #7f8c8d;
+    color: #aaa;
     margin-left: 10px;
 }
